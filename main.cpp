@@ -3,8 +3,8 @@
 using namespace std;
 
 /*
-EECS 348 - Lab 13: Debugging and Testing
-Student: [YOUR NAME]
+:ab 13
+Student: Sushant Brungi
 
 Q1. Is there a fault in the program? If so, locate it and explain.
 Yes there is a fault in the program. It should be i=0 and not i=1. This is because the attendance_records[0] is never counted and if the student was absent for lec 0, then nothing wouldve happened.
