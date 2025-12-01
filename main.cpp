@@ -2,7 +2,6 @@
 #include <vector>
 using namespace std;
 
-// Buggy version from the lab
 bool faillecture_buggy(const vector<int>& attendance_records) {
     int absentcount = 0;
     for (int i = 1; i < (int)attendance_records.size(); ++i) {
@@ -11,7 +10,6 @@ bool faillecture_buggy(const vector<int>& attendance_records) {
     return absentcount >= 3;
 }
 
-// Correct version (for checking expected behavior)
 bool faillecture_correct(const vector<int>& attendance_records) {
     int absentcount = 0;
     for (int i = 0; i < (int)attendance_records.size(); ++i) {
@@ -35,7 +33,6 @@ void run_test(const vector<int>& rec, const string& name) {
 }
 
 int main() {
-    // Q3: fault executed, no error state
     vector<int> q3 = {1,0,0,0,1,1,1,1,1,1};
 
     vector<int> q4 = {0,0,0,0,1,1,1,1,1,1};
